@@ -1,0 +1,8 @@
+* {
+  background-color: black;
+}
+
+canvas {
+  background-color: white;
+  border: 3px solid #a3f9fa;
+}
