@@ -1,5 +1,5 @@
 /*
-Canvas tut https://www.youtube.com/watch?v=EO6OkltgudE
+Canvas tut https://www.youtube.com/watch?v=83L6B13ixQ0
 */
 var canvas = document.querySelector('canvas');
 
@@ -8,12 +8,30 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
 //Rectangles
+
+//c.fillStyle = "rgb, text or Hex color"
+//all rectangles will take the color of the fillStyle precede it.
+c.fillStyle = 'rgba(100, 255, 0, 0.2)';
 //context.fillRect(x, y, w, h);
 c.fillRect(100, 100, 100, 100);
+c.fillStyle = "yellow";
 c.fillRect(300, 100, 100, 100);
+c.fillStyle = "#f3f3f3";
 c.fillRect(500, 100, 100, 100);
 
-//Lines
+// Line
 c.beginPath();
-//moveTo(x, y) Starting point.
-c.moveTo(50, 300);
+
+// moveTo(x, y) Starting point. (Not displayed)
+c.moveTo(100, 200);
+
+// c.lineTo(x, y) where the line will be drawn to.
+c.lineTo(100, 300);
+c.lineTo(400, 300);
+c.lineTo(400, 200);
+c.lineTo(100, 200);
+
+//c.strokeStyle = "rgb, text or Hex color"
+c.strokeStyle = "#a43d63";
+// c.stroke(); calls the stroke fuction to draw the line.
+c.stroke();
