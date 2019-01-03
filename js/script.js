@@ -35,3 +35,24 @@ c.lineTo(100, 200);
 c.strokeStyle = "#a43d63";
 // c.stroke(); calls the stroke fuction to draw the line.
 c.stroke();
+
+// Arc / Circle
+//c.arc(x: int, y: int, r:int, startAngle: float, endAngle: Float, drawCounterClockwise: bool);
+c.beginPath();
+c.arc(400, 300, 100, 0, Math.PI * 2, false);
+c.strokeStyle = 'blue';
+c.stroke();
+
+//Making multiple shapes
+for (var i = 0; i < 10; i++) {
+  var x = Math.random() * window.innerWidth;
+  var y = Math.random() * window.innerHeight;
+  c.beginPath();
+  c.arc(x, y, 100, 0, Math.PI * 2, false);
+  c.strokeStyle = 'blue';
+  c.stroke();
+}
+
+/*
+Challenge Randomize colors of circles.
+*/
